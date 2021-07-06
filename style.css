@@ -1,18 +1,20 @@
 body {
     font-size: 16px;
-    background: url('https://images5.alphacoders.com/645/thumb-1920-645987.jpg') no-repeat;
+    font-family: 'Press Start 2P', cursive;
+    background: url('https://static.wikia.nocookie.net/pokemon-la-serie/images/7/7b/Ar%C3%A8ne_Port_Temp%C3%A8res_Int%C3%A9rieur.png/revision/latest?cb=20160215121944&path-prefix=fr') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .play {
-    
+    width: 800px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
 }
 
 .board {
-    margin: 20px auto;
-    border: 10px solid rgb(177, 3, 3);
-    width: 620px;
+    margin: 0 auto;
     
 }
 
@@ -21,14 +23,71 @@ body {
 }
 
 .cell {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     box-sizing: border-box;
+    border: 1px solid rgba(42, 3, 3, 0.137);
+
     
 }
 
-.snake {
-    /* background-color: black; */
-    background-color: rgb(170, 0, 0);
-    
+.player1 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/297161e7-ff39-45af-9a0b-b0e8c5d14779/d7a49ap-fcbcd0a0-b4eb-46bf-82d0-8e27dc754451.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5NzE2MWU3LWZmMzktNDVhZi05YTBiLWIwZThjNWQxNDc3OVwvZDdhNDlhcC1mY2JjZDBhMC1iNGViLTQ2YmYtODJkMC04ZTI3ZGM3NTQ0NTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.94pTXa54q21gg71PKdZSvKSNZK1Ksg4apx6-MuT0kqo') ;
+    background-size: cover;
+}
+
+.player2 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/297161e7-ff39-45af-9a0b-b0e8c5d14779/d7a43b3-d9613f22-b811-474a-a2a4-8f8e19b6ed1b.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI5NzE2MWU3LWZmMzktNDVhZi05YTBiLWIwZThjNWQxNDc3OVwvZDdhNDNiMy1kOTYxM2YyMi1iODExLTQ3NGEtYTJhNC04ZjhlMTliNmVkMWIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ktKKlRlZJS1QAPJPq8pAwveMgJb85X7h8Ai2Iw_MkHg');
+    background-size: cover;
+}
+
+.pikachu {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01f0931d-c5cd-4880-ab68-f3de6e89b30a/dawfnps-fa07ba54-ebf3-467e-8dca-ba02901ef392.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxZjA5MzFkLWM1Y2QtNDg4MC1hYjY4LWYzZGU2ZTg5YjMwYVwvZGF3Zm5wcy1mYTA3YmE1NC1lYmYzLTQ2N2UtOGRjYS1iYTAyOTAxZWYzOTIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.70AnWCM32v4OC_nvX2eXYTxZMmSDtjizwb7T1ndA40I');
+    background-size: cover;
+}
+
+.alakazam {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23ddfd0a-6934-4f06-9fa9-8be687766403/d7qt8o2-bb57b6ae-465c-4db6-8b25-b268db08ee9e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIzZGRmZDBhLTY5MzQtNGYwNi05ZmE5LThiZTY4Nzc2NjQwM1wvZDdxdDhvMi1iYjU3YjZhZS00NjVjLTRkYjYtOGIyNS1iMjY4ZGIwOGVlOWUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wI7MEWsJiZzV8fW2YCIOuUFffjOx1sUGmV7wBbAUv8A');
+    background-size: cover;
+}
+
+.treasure {
+    background-image: url('https://static.wikia.nocookie.net/pokemon-go/images/1/1e/16.png/revision/latest?cb=20160815214421&path-prefix=fr');
+    background-size: cover;
+}
+
+.pokemonImg {
+    width: 50%;
+    margin: 0 300px;
+}
+
+.scorePlayers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.scorePlayer1, .scorePlayer2 {
+    width: 300px;
+    height: 80px;
+    background-color: cornsilk;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 4px 2px black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 1rem;
+}
+
+.choisePokemon {
+    width: 200px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 2px black;
+    text-align: center;
+    background-color: rgb(202, 2, 2);
+    color: seashell;
+    font-size: 1rem;
+    line-height: 30px;
 }
